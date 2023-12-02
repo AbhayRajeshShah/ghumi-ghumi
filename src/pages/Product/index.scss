@@ -1,0 +1,72 @@
+.MuiInputBase-root {
+  width: 12rem;
+}
+.product-page {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  .right {
+    .product-actions {
+      margin: 2rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p {
+        margin: 0;
+      }
+      .quantity-input {
+        align-items: center;
+        display: flex;
+        gap: 2rem;
+        .controls {
+          display: flex;
+        }
+        button {
+          border: none;
+          outline: none;
+          width: 2rem;
+          height: 2rem;
+          cursor: pointer;
+          border-radius: 999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .increment {
+          background-color: #a435f0;
+          color: white;
+          border: 1px solid #a435f0;
+        }
+        .decrement {
+          transform: rotate(180deg);
+          background-color: white;
+          color: #a435f0;
+          border: 1px solid #a435f0;
+        }
+      }
+      .quantity-input input {
+        width: 3rem;
+        margin: 0 2rem;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 0.5rem 0;
+        border: none;
+        outline: none;
+        -moz-appearance: textfield;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &:disabled {
+          background-color: white;
+        }
+        border-bottom: 2px solid #a435f0;
+      }
+      .total-price span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

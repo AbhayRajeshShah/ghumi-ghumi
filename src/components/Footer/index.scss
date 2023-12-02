@@ -1,0 +1,52 @@
+footer {
+  padding: 3rem 5rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 0px 0px 1px #bbb;
+  div {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    a {
+      p {
+        color: black;
+      }
+    }
+    p {
+      text-transform: capitalize;
+      margin: 0;
+    }
+    .b {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+    }
+    .brand {
+      background-color: black;
+      color: white;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .desc {
+      line-height: 2rem;
+      color: #0c111fbf;
+    }
+    .head {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    i {
+      margin: 0 0.75rem 0 0;
+      scale: 1.1;
+    }
+  }
+}

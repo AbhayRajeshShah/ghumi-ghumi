@@ -1,0 +1,43 @@
+#about {
+  .row {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    .left {
+      flex: 0.6;
+      max-width: 80vw;
+      min-width: 17rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .head {
+        margin: 0;
+        font-size: 3rem;
+        color: black;
+        font-weight: bold;
+      }
+      .desc {
+        margin: 0;
+        font-size: 1.15rem;
+        color: #999;
+        line-height: 2.5rem;
+      }
+    }
+    .img {
+      flex: 0.4;
+      width: 30rem;
+      max-width: 80vw;
+      min-width: 17rem;
+      img {
+        width: 100%;
+      }
+    }
+    &.right {
+      flex-direction: row-reverse;
+    }
+  }
+}

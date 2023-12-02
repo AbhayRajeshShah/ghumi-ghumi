@@ -1,0 +1,79 @@
+#signin {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  .circle {
+    width: 10rem;
+    height: 10rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    right: 0;
+    display: none;
+    border-radius: 999px;
+  }
+  .left {
+    width: 60vw;
+    background-image: url("../../../public/images/bg.png");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0 2rem;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .wave {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 200vh;
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    .title {
+      margin: 0;
+      width: 20rem;
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: black;
+    }
+    .input {
+      margin: 1.25rem 0;
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      p {
+        font-weight: bold;
+        color: #444;
+      }
+      input {
+        padding: 1rem 2rem;
+        border: 2px solid black;
+        outline: none;
+        border-radius: 0.5rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    button {
+      cursor: pointer;
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 0.75rem;
+      padding: 1rem 2rem;
+      outline: none;
+      border: none;
+      background-color: black;
+      color: white;
+    }
+  }
+}

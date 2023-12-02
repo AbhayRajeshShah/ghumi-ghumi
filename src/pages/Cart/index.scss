@@ -1,0 +1,70 @@
+.c {
+  .cart {
+    padding: 2rem 4rem 4rem;
+    .title {
+      margin: 2rem 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .cartItem {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border: 0px;
+      border-bottom: 2px;
+      border-style: solid;
+      padding: 2rem;
+      border-color: #bbb;
+      button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.75rem;
+        border-radius: 999px;
+        color: #f2504f;
+        display: flex;
+        border: none;
+        outline: none;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 1px 2px #ddd;
+      }
+      div {
+        flex: 1;
+        min-width: 5rem;
+      }
+      .decrement {
+        transform: rotate(180deg);
+      }
+      p {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        min-width: 5rem;
+        margin: 0;
+        flex: 1;
+      }
+    }
+  }
+}
+
+.final {
+  margin: 2rem 0 0;
+  p {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  button {
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #f2504f;
+    color: white;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
