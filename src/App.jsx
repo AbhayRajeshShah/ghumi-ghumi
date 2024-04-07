@@ -7,6 +7,7 @@ import Cookies from "universal-cookie";
 import { useEffect, useState } from "react";
 
 function App() {
+  console.log(process.env.REACT_APP_API_URL);
   const [user, setUser] = useState("");
 
   const cookies = new Cookies();
@@ -161,12 +162,14 @@ function App() {
             We have a variety of the world's best destinations that you can
             choose as your trip destination
           </p>
-          <button className="primary">
-            Contact Now{" "}
-            <span className="black">
-              <i className="fa-solid fa-chevron-right"></i>
-            </span>
-          </button>
+          <Link to={"/contact"}>
+            <button className="primary">
+              Contact Now{" "}
+              <span className="black">
+                <i className="fa-solid fa-chevron-right"></i>
+              </span>
+            </button>
+          </Link>
         </div>
         <div className="img">
           <img src="images/feature-hero.png" alt="" />

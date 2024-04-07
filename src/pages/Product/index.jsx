@@ -80,7 +80,7 @@ const ProductPage = () => {
   }, []);
 
   const handleAddToCart = async () => {
-    let response = await fetch("http://localhost:3003/cart", {
+    let response = await fetch(process.env.REACT_APP_API_URL + "/cart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

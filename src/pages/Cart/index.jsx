@@ -14,7 +14,7 @@ const Cart = () => {
 
   useEffect(() => {
     const getData = async (user) => {
-      let response = await fetch("http://localhost:3003/getItems", {
+      let response = await fetch(process.env.REACT_APP_API_URL + "/getItems", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id: user }),
@@ -39,7 +39,7 @@ const Cart = () => {
   }, []);
 
   const update = async () => {
-    let response = await fetch("http://localhost:3003/updateCart", {
+    let response = await fetch(process.env.REACT_APP_API_URL + "/updateCart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: items, id: u }),
@@ -52,7 +52,7 @@ const Cart = () => {
   };
 
   const handleSubmit = async () => {
-    let response = await fetch("http://localhost:3003/placeOrder", {
+    let response = await fetch(process.env.REACT_APP_API_URL + "/placeOrder", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: u }),

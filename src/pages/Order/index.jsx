@@ -14,7 +14,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   const getOrders = async (u) => {
-    let response = await fetch("http://localhost:3003/getOrders", {
+    let response = await fetch(process.env.REACT_APP_API_URL + "/getOrders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: u }),

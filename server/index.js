@@ -1,17 +1,17 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const dotenv = require("dotenv");
+dotenv.config();
 const User = require("./models/User");
 const Cart = require("./models/Cart");
-
 const app = express();
 const PORT = process.env.PORT || 3003;
 
 app.use(cors());
 app.use(express.json());
 
-const MONGODB_URI =
-  "mongodb+srv://admin:%23Abhay17@cluster0.lrcatdy.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URI = process.env.MONGODB_URI;
 mongoose
   .connect(MONGODB_URI, {
     useNewUrlParser: true,

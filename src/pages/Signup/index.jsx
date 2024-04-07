@@ -21,7 +21,7 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await fetch("http://localhost:3003/signup", {
+    let response = await fetch(process.env.REACT_APP_API_URL + "/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
